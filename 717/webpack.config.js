@@ -1,6 +1,5 @@
 var path = require('path')
 var webpack = require('webpack')
-const extractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/main.js',
@@ -13,14 +12,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: extractTextPlugin.extract({
-          fallback: 'vue-style-loader',
-          use: 'css-loader'
-        })
-        // use: [
-        //   'vue-style-loader',
-        //   'css-loader'
-        // ],
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],
       },      {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -71,7 +66,6 @@ module.exports = {
         NODE_ENV: '"development"'
       }
     }),
-    new extractTextPlugin('styles.css'),
     new CleanWebpackPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {

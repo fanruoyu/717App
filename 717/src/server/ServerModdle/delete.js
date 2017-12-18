@@ -4,7 +4,7 @@ module.exports = (req, res) => {
     let params = req.body;
     address_list.list.forEach((item, index) => {
         if (item.id == params.id) {
-            address_list.list.splice(index)
+            address_list.list.splice(index, 1)
         }
     })
     fs.writeFileSync('./data_table/my_address.json', JSON.stringify(address_list))
