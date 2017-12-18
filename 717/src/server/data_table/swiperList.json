@@ -1,0 +1,25 @@
+{
+    "code": 1,
+    "list": [
+        {
+            "id": 0,
+            "src": "http://www.lb717.com/static/mobile/images/activity/banner_activite.jpg"
+        },
+        {
+            "id": 1,
+            "src": "http://www.lb717.com/static/mobile/images/homeImg/video717.png"
+        },
+        {
+            "id": 2,
+            "src": "http://www.lb717.com/static/mobile/images/homeImg/video.png"
+        },
+        {
+            "id": 3,
+            "src": "http://www.lb717.com/static/mobile/images/homeImg/banner1.png"
+        },
+        {
+            "id": 4,
+            "src": "http://www.lb717.com/static/mobile/images/homeImg/home.png"
+        }
+    ]
+}

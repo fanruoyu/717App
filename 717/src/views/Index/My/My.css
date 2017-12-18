@@ -1,0 +1,107 @@
+.my {
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+}
+.userMsg{
+    width: 100%;
+    height: 2.3rem;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-image: url('../../../assets/bg.png');
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userMsg img{
+    width: 18%;
+}
+.userMsg p{
+    color:#fff;
+    font-size: .38rem;font-weight: bold;
+    line-height: .7rem;
+}
+.myStore {
+    width: 100%;
+    height: 1.2rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding:0 .2rem;
+    font-size: .4rem;
+    color: lightcoral;
+    position: relative;
+    border-bottom:1px solid #ccc;
+}
+.myStore img{
+    width: .6rem;
+    height: .6rem;
+    margin-right: .2rem;
+}
+.myStore i{
+    position: absolute;
+    top:.35rem;
+    right: .2rem;
+    font-size: .44rem;
+    color: lightcoral;
+}
+.my_nav{
+    width: 100%;
+    height: 1.5rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: .2rem;
+}
+.my_nav> span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:.2rem .28rem;
+}
+.my_nav> span small{
+    position: relative;
+}
+.my_nav> span small i {
+    position: absolute;
+    right: -.4rem;;
+    top:.05rem;
+}
+.my_nav span>i {
+    font-size: .6rem;
+}
+.last{
+    border-left:1px solid #ccc;
+}
+.vertical_nav{
+    width: 100%;
+    background: #fff;
+    padding-left:.8rem;
+    padding-bottom: .2rem;
+}
+.vertical_nav li {
+    line-height: 1rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-size: .4rem;
+}
+.vertical_nav li a{
+    font-size: .4rem;
+    color:#333;
+}
+.vertical_nav li i:nth-child(1) {
+    font-size: .54rem;
+    position: absolute;
+    left:-.6rem;;
+    top:0rem;
+}
+.vertical_nav li i:nth-child(2) {
+    position: absolute;
+    right: .2rem;
+}
+.vertical_nav li:last-child{
+    border: 0;
+}

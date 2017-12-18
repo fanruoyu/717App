@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav3.png",
+        "conts": "牛奶乳品"
+    },
+    {
+        "id": 1,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav1.png",
+        "conts": "家乡味道"
+    },
+    {
+        "id": 2,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav4.png",
+        "conts": "休闲零食"
+    },
+    {
+        "id": 3,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav6.png",
+        "conts": "米面粮油"
+    },
+    {
+        "id": 4,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav7.png",
+        "conts": "调味调料"
+    },
+    {
+        "id": 5,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav8.png",
+        "conts": "酒水饮料"
+    },
+    {
+        "id": 6,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav5.png",
+        "conts": "生鲜水果"
+    },
+    {
+        "id": 7,
+        "src": "http://www.lb717.com/static/mobile/images/homeImg/nav2.png",
+        "conts": "进口食品"
+    }
+]

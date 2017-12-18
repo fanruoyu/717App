@@ -1,0 +1,160 @@
+.home{
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.maincontents {
+    flex:1;
+    background: #EEEEEE
+  }
+.maincontents{
+  overflow-y: scroll;
+  background: #F6F5F5;
+}
+.navBox {
+  padding-bottom: .2rem;
+  background: #fff;
+}
+.navlist{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.advertise {
+  display: flex;
+  width: 100%;
+}
+.advertise span{
+  width: .9rem;
+  height: .8rem;
+  font-size: 17px;
+  display: inline-block;
+  line-height: .4rem;
+  color: #ff6d00;
+  margin-left: .3rem;
+}
+.adverCont{
+  width: 80%;
+  height: .8rem;
+  border:1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.adverCont .swiper-slide {
+  padding-left:.2rem;
+  font-size: .26rem;
+}
+.today {
+  width: 100%;
+  background: #fff;
+  margin:.1rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding: .1rem .2rem;
+  align-items: center;
+}
+.today p img{
+  width: .4rem;
+  height: .4rem;
+  vertical-align: middle;
+}
+.today p em {
+  color: #ff6d00;
+  font-size: .34rem;
+ 
+}
+.today p small{
+  color: #ff6d00;
+  font-size: .26rem;
+}
+.today span{
+  color: #999;
+}
+.coupon{
+  width: 100%;
+  height: 4.24rem;
+  padding-bottom: .2rem;
+  display: flex;
+  margin-bottom: .1rem;
+}
+.coupon>div{
+  flex:1;
+}
+.leftcont{
+  padding-right: .05rem;
+}
+.coupon>div img{
+  width: 100%;
+}
+.rightcont{
+  display: flex;
+  flex-direction: column;
+}
+.rightcont .rightcont-top {
+  padding-bottom: .05rem;
+}
+.homeTit{
+  width: 100%;
+  padding:.1rem 0;
+  position: relative;
+  background: #fff;
+  margin-bottom: .1rem;
+}
+.homeTit b{
+  position: absolute;
+  width: 60%;
+  height: .02rem;
+  background: #FF6D00;
+  top:50%;
+  left:50%;
+  margin-left: -30%;
+}
+.homeTit h4{
+  width: 35%;
+  background: #fff;
+  padding:.1rem;
+  margin-left:30%;
+  color:#FF6D00;
+  position: relative;
+  z-index: 999;
+  font-weight: normal;
+
+}
+.homeTit h4 img{
+  width: .4rem;
+  height: .4rem;
+  vertical-align: middle;
+  margin:0 .1rem ;
+}
+.homeTit span{
+  position: absolute;
+  right: .2rem;
+  top:.2rem;
+  font-weight: normal;
+  color:#999;
+}
+.productList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productList .box {
+  width: 50%;
+  margin-top:.1rem;
+}
+
+.productList .box:nth-child(2n){
+  padding-left:.04rem;
+}
+.productList .box:nth-child(2n +1){
+  padding-right:.04rem;
+}
+.end{
+  text-align: center;
+  padding:.2rem 0;
+}
