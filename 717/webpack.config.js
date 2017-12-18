@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
-
+const extractTextPlugin = require('extract-text-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -12,10 +13,14 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ],
+        use: extractTextPlugin.extract({
+          fallback: 'vue-style-loader',
+          use: 'css-loader'
+        })
+        // use: [
+        //   'vue-style-loader',
+        //   'css-loader'
+        // ],
       },      {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -53,7 +58,8 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    overlay: true
+    overlay: true,
+    compress: true
   },
   performance: {
     hints: false
@@ -63,6 +69,13 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"development"'
+      }
+    }),
+    new extractTextPlugin('styles.css'),
+    new CleanWebpackPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+          warnings: false
       }
     })
   ]
