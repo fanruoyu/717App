@@ -48,14 +48,14 @@ export default {
                errors = '密码不能为空'
            } else if (!this.number) {
                errors = '请输入验证码'
-           } else if (!reg.test(this.tel)) {
-               errors = '用户格式有误'
-           }
+           } 
+        //    else if (!reg.test(this.tel)) {
+        //        errors = '用户格式有误'
+        //    }
            if (errors) {
                this.$message(errors)
            } else  {
-               
-                this.$http.post('/api/regist', {
+                this.$http_token.post('/api/regist', {
                 tel: this.tel,
                 pwd: this.pwd
             }).then((res) => {
@@ -63,7 +63,7 @@ export default {
                 this.tel = '';
                 this.number = '';
                 this.pwd = '';
-                if (res.data.code) {    
+                if (res.data.code == 1) {    
                     this.$router.push({name: 'Login'})
                 }
             })

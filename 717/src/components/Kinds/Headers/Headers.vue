@@ -1,9 +1,19 @@
 <template>
     <div class="header">
            <i class="icon iconfont icon-sousuo"></i>
-           <input type="text" placeholder="请输入您要购买的商品">
+           <input type="text" placeholder="请输入您要购买的商品" @focus="onfocus">
        </div>
 </template>
+<script>
+export default {
+  methods: {
+      onfocus () {
+            this.$router.push({name: 'Search'})
+        }
+  }
+}
+</script>
+
 <style scoped>
 .header{
     height: 1rem;

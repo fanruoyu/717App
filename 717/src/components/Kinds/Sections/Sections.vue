@@ -10,7 +10,12 @@
             </li>
         </ol>
         <div class="content">
-            <dl-list v-for="(val, i) in contens" :key="i" :src='val.cate_icon' :text='val.cate_name'></dl-list>
+            <dl-list 
+              v-for="(val, i) in contens" 
+              :key="i" 
+              :src='val.src' 
+              :text='val.options'>
+            </dl-list>
         </div>
     </section>
 </template>
@@ -21,8 +26,7 @@ export default {
         return {
             ind: 0,
             list: [],
-            contens:[],
-            cate_id: 2
+            contens:[]
         }
     },
     components: {
@@ -31,31 +35,35 @@ export default {
     methods: {
         addClass (val,index) {
             this.ind = index;
-            this.cate_id = val.cate_id
-            this.categorySon ()
+            this.categorySon (val.cate_id)
         },
         topCategory () {
-            this.$http.post('/mall/category/topCategory')
+            this.$http_token.post('/mall/category/topCategory')
                 .then((res) => {
                     this.list = res.data.data;
                 })
         },
-        categorySon () {
-            if (this.cate_id == 2) {
-                this.$http.post('/mall/category/getcatelist')
+        categorySon (id) {
+            this.$http.post('/admin/category/getcatelist', {
+                cate_id: id
+            }).then(res => {
+                this.contens = res.data.list
+            })
+            /*if (this.cate_id == 2) {
+                this.$http_token.post('/mall/category/getcatelist')
                     .then((res) => {
                         this.contens = res.data.data
                         // console.log(res.data.data)
                     })
             } else {
                 this.contens = []
-            }
+            }*/
             
         }
     },
     created () {
         this.topCategory();
-        this.categorySon ()
+        this.categorySon (2)
     }
 }
 </script>

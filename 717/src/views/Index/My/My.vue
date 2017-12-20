@@ -3,7 +3,7 @@
     <headers></headers>
     <div class="userMsg">
       <img src="../../../assets/user.png"/>
-      <p>童言</p>
+      <p>{{userName}}</p>
     </div>
     <div class="myStore">
         <img src="../../../assets/shoping.png" alt="">
@@ -56,14 +56,25 @@
   </div>
 </template>
 <script>
-import Headers from '@/components/My/Headers/Headers.vue'
+import Headers from '@/components/My/Headers/Headers.vue';
+import {getCookie} from '@/utiles/utiles.js'
 export default {
+    data () {
+        return {
+            userName: ''
+        }
+    },
     components: {
         Headers
     },
     created () {
-        this.$http.post('/admin/showList').then((res) => {
-            this.$store.commit('updata_car', res.data.list)
+        this.$http_token.post('/admin/username').then(res => {
+            if (res.data.msg === 'success') {
+                this.userName = res.data.userName.data
+            } else {
+                this.userName = '用户名'
+            }
+            
         })
     }
 }

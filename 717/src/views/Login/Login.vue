@@ -43,6 +43,7 @@ export default {
                     tel: this.tel,
                     pwd: this.pwd
                 }).then((res) => {
+                    this.$store.state.userName = res.data.token
                     if (res.data.msg === 'success') {
                         setCookie('token', res.data.token)
                         this.$router.push({name: 'Home'})

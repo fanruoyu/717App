@@ -7,7 +7,8 @@ const store = new VueX.Store({
         addCar: [],
         sum: 0,
         checkedAll: false,
-        address: []
+        address: [],
+        username: ''
     },
     mutations: {
         updata_list (state, data) {

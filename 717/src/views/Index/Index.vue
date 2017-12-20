@@ -1,7 +1,7 @@
 <template>
   <div class="main">
         <div class='indexConts'>
-            <keep-alive include='home'>
+            <keep-alive>
                 <router-view></router-view>
             </keep-alive>
             
@@ -30,6 +30,15 @@
         </div>
   </div>
 </template>
+<script>
+export default {
+    created () {
+        this.$http_token.post('/admin/showList').then((res) => {
+            this.$store.commit('updata_car', res.data.list)
+        })
+    }
+}
+</script>
 
 <style scoped>
 .main{

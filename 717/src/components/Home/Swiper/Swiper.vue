@@ -16,7 +16,7 @@ export default {
         }
     },
     mounted () {
-        this.$http.get('/api/indexSwiper')
+        this.$http_token.get('/api/indexSwiper')
             .then((res) => {
                 if (res.data.msg === 'success') {
                     this.swiperList = res.data.list;

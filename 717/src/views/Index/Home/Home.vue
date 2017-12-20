@@ -92,20 +92,20 @@ export default {
         ProductList
     },
     created () {
-        this.$http.get('/api/navList')
+        this.$http_token.get('/api/navList')
             .then((res) => {
                 if (res. data.msg === 'Success') {
                     this.navList = res.data.list
                 }
             })
-        this.$http.post('/admin/showList').then((res) => {
+        this.$http_token.post('/admin/showList').then((res) => {
             this.$store.commit('updata_car', res.data.list)
         })
         this.queryGoodsList()
     },
     methods: {
         queryGoodsList () {
-            this.$http.post('/mall/index/getGoodsChannel', {
+            this.$http_token.post('/mall/index/getGoodsChannel', {
                 channel_id: this.channel_id
             }).then((res) => {
                this.produceList = this.produceList.concat(res.data.data.data);

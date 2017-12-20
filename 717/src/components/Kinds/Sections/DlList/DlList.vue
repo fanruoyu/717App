@@ -1,7 +1,7 @@
 <template>
     <keep-alive>
         <dl>
-            <dt><img v-lazy="'http://www.lb717.com' + src" alt=""></dt>
+            <dt><img v-lazy="src" alt=""></dt>
             <dd>{{text}}</dd>
         </dl>
     </keep-alive>

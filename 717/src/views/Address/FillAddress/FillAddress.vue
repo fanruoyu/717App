@@ -131,11 +131,29 @@ export default {
                 this.$message(errors);
                 return;
             }
-            // if (this.$route.params.msg) {
-            //     console.log(0);
-            //     return;
-            // }
-            this.$http.post('/admin/myAddress', {
+            if (this.$route.params.msg) {
+                this.$http_token.post('/admin/revamp', {
+                    id: this.$route.params.msg.id,
+                    checked: this.checked,
+                    name: this.name,
+                    tel: this.tel,
+                    cancel: this.cancel,
+                    city: this.city,
+                    area: this.area,
+                    myaddress: this.myaddress
+                }).then((res) => {
+                    if (res.data === 'success') {
+                        this.name = '收货人姓名';
+                        this.tel = '手机号'
+                        this.cancel = '请选择省'
+                        this.city = '请选择市'
+                        this.area = '请选择区'
+                        this.myaddress = '详细地址'
+                    }
+                })
+                return;
+            }
+            this.$http_token.post('/admin/myAddress', {
                 checked: this.checked,
                 name: this.name,
                 tel: this.tel,
@@ -145,8 +163,8 @@ export default {
                 myaddress: this.myaddress
             }).then((res) => {
                 if (res.data.msg === 'success') {
+                    console.log(this.tel)
                     this.$message(res.data.msg);
-                    // this.$store.commit('updata_adress', res.data.address.list);
                     this.name = '收货人姓名';
                     this.tel = '手机号'
                     this.cancel = '请选择省'
@@ -159,14 +177,14 @@ export default {
         }
     },
     created () {
-        // if(this.$route.params.msg) {
-        //     this.checked = this.$route.params.msg.checked
-        //     this.name = this.$route.params.msg.name
-        //     this.tel = this.$route.params.msg.tel
-        //     this.myaddress = this.$route.params.msg.myaddress
-        //     this.cancel = this.$route.params.msg.cancel
-        // }
-        this.$http.post('/admin/citylist')
+        if(this.$route.params.msg) {
+            this.checked = this.$route.params.msg.checked
+            this.name = this.$route.params.msg.name
+            this.tel = this.$route.params.msg.tel
+            this.myaddress = this.$route.params.msg.myaddress
+            this.cancel = this.$route.params.msg.cancel
+        }
+        this.$http_token.post('/admin/citylist')
             .then((res) => {
                 this.cancelList = res.data.list
             })

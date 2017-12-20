@@ -1,0 +1,186 @@
+[
+    {
+        "cate_id": 2,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jia3@2x.png",
+                "options": "东南"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jia2@2x.png",
+                "options": "西北"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jia1@2x.png",
+                "options": "东北"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jia4@2x.png",
+                "options": "西南"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jia5@2x.png",
+                "options": "中原"
+            }
+        ]
+    },
+    {
+        "cate_id": 3,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jin1@2x.png",
+                "options": "进口食品"
+            }
+        ]
+    },
+    {
+        "cate_id": 4,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/niu1@2x.png",
+                "options": "液态奶"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/niu4@2x.png",
+                "options": "蜂蜜"
+            }
+        ]
+    },
+    {
+        "cate_id": 5,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu1@2x.png",
+                "options": "坚果炒货"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu2@2x.png",
+                "options": "膨化食品"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu3@2x.png",
+                "options": "饼干糕点"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu4@2x.png",
+                "options": "果脯蜜饯"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu5@2x.png",
+                "options": "糖果"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu6@2x.png",
+                "options": "肉类零食"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/xiu7@2x.png",
+                "options": "其他"
+            }
+        ]
+    },
+    {
+        "cate_id": 6,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/shen1@2x.png",
+                "options": "肉禽"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/shen3@2x.png",
+                "options": "果蔬"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/shen4@2x.png",
+                "options": "蛋类"
+            }
+        ]
+    },
+    {
+        "cate_id": 7,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi1@2x.png",
+                "options": "米麦杂粮"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi2@2x.png",
+                "options": "面粉"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi3@2x.png",
+                "options": "食用油"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi4@2x.png",
+                "options": "方便速食"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi5@2x.png",
+                "options": "干货"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi6@2x.png",
+                "options": "豆类制品"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/mi7@2x.png",
+                "options": "其他"
+            }
+        ]
+    },
+    {
+        "cate_id": 8,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao1@2x.png",
+                "options": "鲜调味品"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao2@2x.png",
+                "options": "干调味品"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao3@2x.png",
+                "options": "酱"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao4@2x.png",
+                "options": "调味油"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao5@2x.png",
+                "options": "日常调味"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao6@2x.png",
+                "options": "腌菜"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/tiao7@2x.png",
+                "options": "其他"
+            }
+        ]
+    },
+    {
+        "cate_id": 9,
+        "list": [
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jiu1@2x.png",
+                "options": "名酒"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jiu2@2x.png",
+                "options": "功能水"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jiu3@2x.png",
+                "options": "中水"
+            },
+            {
+                "src": "http://www.lb717.com/static/mobile/images/category/jiu4@2x.png",
+                "options": "茶叶"
+            }
+        ]
+    }
+]

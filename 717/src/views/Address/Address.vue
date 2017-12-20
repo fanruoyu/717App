@@ -12,7 +12,7 @@
     <div class="addressList">
       <div 
         class="main" 
-        v-if="$store.state.address.length">
+        v-if="$store.state.address">
         <address-sect
           v-for="(item, index) in $store.state.address"
           :key="index"
@@ -50,9 +50,9 @@ export default {
       }
   },
   created () {
-      this.$http.post('/admin/showAddress').then(res => {
+      this.$http_token.post('/admin/showAddress').then(res => {
           // this.list = res.data.address.list;
-          this.$store.commit('updata_adress', res.data.address.list);
+          this.$store.commit('updata_adress', res.data.address);
       })
   }
 }

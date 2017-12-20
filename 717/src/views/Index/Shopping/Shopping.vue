@@ -46,7 +46,7 @@ export default {
         }
     },
     created () {
-        this.$http.post('/admin/showList').then((res) => {
+        this.$http_token.post('/admin/showList').then((res) => {
             this.$store.commit('updata_car', res.data.list)
         })
     }

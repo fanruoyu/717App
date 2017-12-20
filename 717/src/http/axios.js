@@ -18,6 +18,7 @@ let httpPlugin = {
            let token =  getCookie('token')
            config.headers.Authorization = token
             return config;
+            console.log(token, '=====cogif')
         }, (error) => {
             // 错误信息
             return Promise.reject(error)

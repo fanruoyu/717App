@@ -23,7 +23,7 @@ export default {
             this.$router.push({name: 'Public', params: {data: item}})
         },
         addShops () {
-            this.$http.post('/admin/addCar', {
+            this.$http_token.post('/admin/addCar', {
                 name: this.item.goods_name,
                 id: this.item.goods_id,
                 checked: false,

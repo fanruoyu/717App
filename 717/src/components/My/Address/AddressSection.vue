@@ -20,8 +20,8 @@ export default {
  },
  methods: {
      deleteAddress () {
-         this.$http.post('/admin/delete', {id: this.item.id}).then(res => {
-             this.$store.commit('updata_adress', res.data.address.list);
+         this.$http_token.post('/admin/delete', {id: this.item.id}).then(res => {
+             this.$store.commit('updata_adress', res.data.address);
          })
      },
       revampFn () {
